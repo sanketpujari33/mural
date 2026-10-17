@@ -1,5 +1,4 @@
 .DS_Store
-.env*
 !.env.example
 .build/
 DerivedData/
@@ -41,3 +40,4 @@ apps/android/local.properties
 apps/android/.idea/
 *.jks
 *.keystore
+config.bat

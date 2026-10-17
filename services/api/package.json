@@ -7,9 +7,9 @@
     "node": ">=22.19"
   },
   "scripts": {
-    "dev": "tsx watch --env-file=.env src/main.ts",
-    "build": "tsc",
-    "start": "node --env-file-if-exists=.env dist/src/main.js",
+    "dev": "node init && tsx watch --env-file=.env src/main.ts",
+    "build": "node init && tsc",
+    "start": "node init && node --env-file-if-exists=.env dist/src/main.js",
     "migrate": "tsx --env-file=.env src/migrate.ts",
     "minutes-admin": "tsx --env-file-if-exists=.env src/minutes-admin.ts",
     "test": "tsx --test --test-concurrency=1 tests/*.test.ts",
